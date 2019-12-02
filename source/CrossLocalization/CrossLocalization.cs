@@ -5,12 +5,12 @@ using System.IO;
 using System.Reflection;
 using Newtonsoft.Json;
 
-namespace Nyxbull.Plugins.XamLoc
+namespace Nyxbull.Plugins.CrossLocalization
 {
 	/// <summary>
 	/// Provides methods for localization
 	/// </summary>
-	public static partial class Localization
+	public static partial class CrossLocalization
 	{
 		/// <summary>
 		/// Gets the current two-letter language code (ISO 639-1)
@@ -52,22 +52,18 @@ namespace Nyxbull.Plugins.XamLoc
 		/// <param name="pathToLanguagesFolder">Relative path to the languages folder (default is "Localization.Languages")</param>
 		public static void Initialize(Assembly assembly, string runNamespace, string pathToLanguagesFolder = null)
 		{
-			if (assembly == null) {
-				throw new LocalizationException(Consts.ExceptionMessageNullAssembly);
-			}
-
 			checkRunNamespace(runNamespace);
 
-			Localization.assembly = assembly;
-			Localization.runNamespace = runNamespace;
+			CrossLocalization.assembly = assembly;
+			CrossLocalization.runNamespace = runNamespace;
 
 			dictionary = new Dictionary<string, string>();
 			dictionaryDefault = new Dictionary<string, string>();
 
 			if (pathToLanguagesFolder == null) {
-				Localization.pathToLanguagesFolder = Consts.DefaultPathToLanguagesFolder;
+				CrossLocalization.pathToLanguagesFolder = Consts.DefaultPathToLanguagesFolder;
 			} else {
-				Localization.pathToLanguagesFolder = pathToLanguagesFolder;
+				CrossLocalization.pathToLanguagesFolder = pathToLanguagesFolder;
 			}
 		}
 

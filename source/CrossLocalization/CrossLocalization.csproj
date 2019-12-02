@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <AssemblyName>Nyxbull.Plugins.CrossLocalization</AssemblyName>
+    <RootNamespace>Nyxbull.Plugins.CrossLocalization</RootNamespace>
+    <Product>Nyxbull.Plugins.CrossLocalization</Product>
+    <PackageId>Nyxbull.Plugins.CrossLocalization</PackageId>
+    <PackageVersion>1.1.0</PackageVersion>
+    <Authors>Nyxbull Software</Authors>
+    <Copyright>Copyright (c) 2019 Nyxbull Software</Copyright>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Owners>Nyxbull Software</Owners>
+    <Summary>Localization Plugin for Xamarin.Forms, Xamarin.iOS, Xamarin.Android and Windows</Summary>
+    <PackageTags>xamarin, localization, plugin, windows, ios, android, monodroid, monotouch, xamarin.forms, netstandard</PackageTags>
+    <Title>Localization Plugin for Xamarin and Windows</Title>
+    <Description>Localization plugin for Xamarin and Windows</Description>
+    <PackageProjectUrl>https://github.com/nyxbull/CrossLocalization</PackageProjectUrl>
+    <PackageReleaseNotes>See: https://github.com/nyxbull/CrossLocalization</PackageReleaseNotes>
+    <PackageIconUrl>https://nyxbull.files.wordpress.com/2016/10/ns_512_color2.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/nyxbull/CrossLocalization/blob/master/LICENSE</PackageLicenseUrl>
+    <PackOnBuild>true</PackOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
+  </ItemGroup>
+</Project>

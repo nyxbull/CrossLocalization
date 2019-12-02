@@ -1,4 +1,4 @@
-﻿namespace Nyxbull.Plugins.XamLoc
+﻿namespace Nyxbull.Plugins.CrossLocalization
 {
 	/// <summary>
 	/// Provides constant values of common language codes

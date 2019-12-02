@@ -1,8 +1,8 @@
-﻿namespace Nyxbull.Plugins.XamLoc
+﻿namespace Nyxbull.Plugins.CrossLocalization
 {
 	/// <summary>
 	/// Package constants.
-	/// </summary>
+	/// </summary>{
 	internal static class Consts
 	{
 		/// <summary>
@@ -14,11 +14,6 @@
 		/// The system language code.
 		/// </summary>
 		public const string SystemLangCode = "--";
-
-		/// <summary>
-		/// The exception message for null assembly situations
-		/// </summary>
-		public const string ExceptionMessageNullAssembly = "Assembly cannot be null";
 
 		/// <summary>
 		/// The exception message for null or empty namespace situations
@@ -48,7 +43,7 @@
 		/// <summary>
 		/// The exception message for empty language code situations
 		/// </summary>
-		public const string ExceptionLangCodeNotSupported= "This language code is not supported";
+		public const string ExceptionLangCodeNotSupported = "This language code is not supported";
 
 		/// <summary>
 		/// The exception message for language file processing error

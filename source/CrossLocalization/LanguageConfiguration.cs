@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Nyxbull.Plugins.XamLoc
+namespace Nyxbull.Plugins.CrossLocalization
 {
 	/// <summary>
 	/// Provides methods for configuring and getting languages

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Nyxbull.Plugins.XamLoc
+namespace Nyxbull.Plugins.CrossLocalization
 {
 	/// <summary>
 	/// The exception is thrown when an error occurs during package initializing and configuring
