@@ -1,2 +1,3 @@
-# xamloc
-Custom localization solution for Xamarin (JSON files)
+# CrossLocalization
+
+Custom localization solution for Xamarin & Windows with JSON files.
