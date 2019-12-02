@@ -4,9 +4,9 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 
-namespace Nyxbull.Plugins.XamLoc
+namespace Nyxbull.Plugins.CrossLocalization
 {
-	public static partial class Localization
+	public static partial class CrossLocalization
 	{
 		/// <summary>
 		/// Current dictionary
@@ -83,10 +83,6 @@ namespace Nyxbull.Plugins.XamLoc
 			}
 
 			if (langCode.Length != 2) {
-				throw new LocalizationException(Consts.ExceptionMessageTwoLetterLangCode);
-			}
-
-			if (Regex.IsMatch(langCode, @"^[a-zA-Z]+$")) {
 				throw new LocalizationException(Consts.ExceptionMessageTwoLetterLangCode);
 			}
 		}

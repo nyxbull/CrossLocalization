@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossLocalization", "CrossLocalization\CrossLocalization.csproj", "{8C35B74D-681A-4FA6-8D02-E0688DD4875D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C35B74D-681A-4FA6-8D02-E0688DD4875D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C35B74D-681A-4FA6-8D02-E0688DD4875D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C35B74D-681A-4FA6-8D02-E0688DD4875D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C35B74D-681A-4FA6-8D02-E0688DD4875D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
