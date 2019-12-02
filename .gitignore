@@ -329,4 +329,7 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 
+# Dynamic libraries
+*.dll
+
 .DS_Store
