@@ -8,4 +8,4 @@ msbuild source/CrossLocalization/CrossLocalization.csproj /t:Clean /p:Configurat
 msbuild source/CrossLocalization/CrossLocalization.csproj /p:OutputType=Library /p:Configuration=Release
 
 # Pack library to NuGet package
-msbuild -t:pack source/CrossLocalization/CrossLocalization.csproj /p:PackageOutputPath="..\..\nuget" /p:Configuration=Release
+msbuild -t:pack source/CrossLocalization/CrossLocalization.csproj /p:PackageOutputPath="..\..\nuget\packages" /p:Configuration=Release
