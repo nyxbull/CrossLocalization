@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
+    <TargetFrameworks>netstandard1.0;netstandard2.0;net45</TargetFrameworks>
     <AssemblyName>Nyxbull.Plugins.CrossLocalization</AssemblyName>
     <RootNamespace>Nyxbull.Plugins.CrossLocalization</RootNamespace>
     <Product>Nyxbull.Plugins.CrossLocalization</Product>
     <PackageId>Nyxbull.Plugins.CrossLocalization</PackageId>
-    <PackageVersion>1.1.0</PackageVersion>
+    <PackageVersion>1.2.0</PackageVersion>
     <Authors>Nyxbull Software</Authors>
     <Copyright>Copyright (c) 2019 Nyxbull Software</Copyright>
     <DevelopmentDependency>true</DevelopmentDependency>
@@ -24,6 +24,5 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
   </ItemGroup>
 </Project>
