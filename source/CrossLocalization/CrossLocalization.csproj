@@ -6,6 +6,7 @@
     <Product>Nyxbull.Plugins.CrossLocalization</Product>
     <PackageId>Nyxbull.Plugins.CrossLocalization</PackageId>
     <PackageVersion>1.3.0</PackageVersion>
+    <Version>1.3.0</Version>
     <Authors>Nyxbull Software</Authors>
     <Copyright>Copyright (c) 2019 Nyxbull Software</Copyright>
     <NeutralLanguage>en</NeutralLanguage>
@@ -18,6 +19,7 @@
     <PackageReleaseNotes>See: https://github.com/nyxbull/CrossLocalization</PackageReleaseNotes>
     <PackageIconUrl>https://nyxbull.files.wordpress.com/2016/10/ns_512_color2.png</PackageIconUrl>
     <PackageLicenseUrl>https://github.com/nyxbull/CrossLocalization/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/nyxbull/CrossLocalization</RepositoryUrl>
     <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
 
