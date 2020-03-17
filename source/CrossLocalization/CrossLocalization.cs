@@ -159,7 +159,7 @@ namespace Nyxbull.Plugins.CrossLocalization
 				checkLangCode(regionLangCode);
 			}
 
-			CultureInfo culture = null;
+			CultureInfo culture;
 
 			try {
 				if (regionLangCode == null) {
@@ -229,10 +229,15 @@ namespace Nyxbull.Plugins.CrossLocalization
 
 			dictionary.Clear();
 
-			var stream = assembly.GetManifestResourceStream(runNamespace + "." + pathToLanguagesFolder + "." + CurrentLanguageCode + ".json");
+			var stream = getCurrentLanguageCodeStream();
 
 			if (stream == null) {
-				throw new LocalizationException(Consts.ExceptionProcessingPathToJson);
+				CurrentLanguageCode = defaultLangCode;
+				stream = getCurrentLanguageCodeStream();
+
+				if (stream == null) {
+					throw new LocalizationException(Consts.ExceptionProcessingPathToJson);
+				}
 			}
 
 			string JSONfile = "";
@@ -252,7 +257,7 @@ namespace Nyxbull.Plugins.CrossLocalization
 		{
 			checkRunNamespace(runNamespace);
 
-			string translation = string.Empty;
+			string translation;
 
 			try {
 				translation = dictionaryDefault[tag];
@@ -284,6 +289,16 @@ namespace Nyxbull.Plugins.CrossLocalization
 				}
 			}
 			return translation;
+		}
+
+		/// <summary>
+		/// Gets <see cref="Stream"/> by <see cref="CurrentLanguageCode"/>.
+		/// </summary>
+		/// <returns></returns>
+		static Stream getCurrentLanguageCodeStream()
+		{
+			return assembly.GetManifestResourceStream(
+				$"{runNamespace}.{pathToLanguagesFolder}.{CurrentLanguageCode}.json");
 		}
 	}
 }
