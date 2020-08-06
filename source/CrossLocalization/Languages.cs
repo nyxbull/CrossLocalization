@@ -856,7 +856,7 @@
 		/// </summary>
 		public static Language LT {
 			get {
-				return new Language("lt", "Lithuanian", "lietuvių kalba");
+				return new Language("lt", "Lithuanian", "Lietuvių kalba");
 			}
 		}
 
